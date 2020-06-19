@@ -16,5 +16,5 @@ echo $GITHUB_HEAD_REF
 
 response=./tmp/curloutput
 /usr/bin/curl "$@" -o $(response)
-echo "::set-output name=resonse::$response"
+echo "::set-output name=response::$response"
 echo "::add-path::$response"
