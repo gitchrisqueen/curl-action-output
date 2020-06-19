@@ -33,9 +33,12 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: curl
+      id: curl
       uses: enflo/curl-action@master
       with:
         curl: {{ CURL ARGUMENTS }}
+    - name: use curl output
+      run: cat ${{steps.curl.outputs.response}}
 ```
 
 [travis-image]: https://travis-ci.com/enflo/curla-action.svg?branch=master

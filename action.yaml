@@ -9,7 +9,7 @@ inputs:
     default: 'toniflorithomar.cat'
 outputs:
   response: # id of output
-    description: 'Curl response'
+    description: 'File location of Curl response'
 runs:
   using: 'docker'
   image: 'Dockerfile'
