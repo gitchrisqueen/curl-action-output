@@ -14,7 +14,7 @@ GITHUB_EVENT_PATH=$GITHUB_EVENT_PATH
 
 echo $GITHUB_HEAD_REF
 mkdir -p ./tmp
-response="./tmp/curloutput"
+response="./tmp/curloutput.zip"
 /usr/bin/curl $@ -o $response
 echo "::set-output name=response::$response"
 echo "::add-path::$response"

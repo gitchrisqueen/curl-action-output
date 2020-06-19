@@ -6,7 +6,6 @@ inputs:
   curl:  # id of input
     description: 'curl arguments'
     required: true
-    default: 'toniflorithomar.cat'
 outputs:
   response: # id of output
     description: 'File location of Curl response'
