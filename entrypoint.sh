@@ -15,6 +15,6 @@ GITHUB_EVENT_PATH=$GITHUB_EVENT_PATH
 echo $GITHUB_HEAD_REF
 
 response=./tmp/curloutput
-/usr/bin/curl $@ -o $(response)
+/usr/bin/curl "$@" -o $(response)
 echo "::set-output name=resonse::$response"
 echo "::add-path::$response"
